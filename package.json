@@ -1,0 +1,41 @@
+{
+  "name": "super-d",
+  "version": "0.1.0",
+  "description": "A simple UI design based on `super-x`.",
+  "module": "./dist/super-d.min.js",
+  "main": "./dist/super-d.umd.min.js",
+  "types": "./index.d.ts",
+  "author": "3h",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "rollup -c",
+    "postbuild": "terser dist/super-d.js --config-file terser.json --module -o dist/super-d.min.js && terser dist/super-d.umd.js --config-file terser.json -o dist/super-d.umd.min.js && node stat",
+    "docs": "dts2md ** !index.d.ts -i ./types -o ./docs -l -I Home.md"
+  },
+  "repository": "huang2002/super-d",
+  "keywords": [
+    "d",
+    "design",
+    "super-x",
+    "3h"
+  ],
+  "files": [
+    "dist",
+    "types",
+    "index.d.ts"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "dts2md": "^0.4.0",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "super-x": "^0.15.0",
+    "terser": "^4.6.0",
+    "typescript": "^3.8.0"
+  },
+  "peerDependencies": {
+    "super-x": "^0.15.0"
+  }
+}
