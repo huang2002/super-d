@@ -17,10 +17,16 @@ X.insertStyle('body', {
     backgroundColor: '#F5F5F5',
 });
 
+/**
+ * Class for primary text spans
+ */
 export const PRIMARY_TEXT_CLASS = X.createClass({
     display: 'inline',
     color: '#111',
     textShadow: '0 1px 0 #FFF',
 });
-
+/** dts2md break */
+/**
+ * Component factory of primary text spans
+ */
 export const PrimaryText = design('span', PRIMARY_TEXT_CLASS);

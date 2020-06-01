@@ -1,12 +1,21 @@
 import { design } from './design';
 
+/**
+ * Class for block sections with vertical padding
+ */
 export const SECTION_CLASS = X.createClass({
     display: 'block',
     padding: '.5em 0',
 });
-
+/** dts2md break */
+/**
+ * Component factory of block sections
+ */
 export const Section = design('section', SECTION_CLASS);
-
+/** dts2md break */
+/**
+ * Class for headers at the top of view
+ */
 export const HEADER_CLASS = X.createClass({
     display: 'block',
     position: 'fixed',
@@ -21,9 +30,15 @@ export const HEADER_CLASS = X.createClass({
     backdropFilter: 'blur(2px)',
     zIndex: '9',
 });
-
+/** dts2md break */
+/**
+ * Component factory of headers
+ */
 export const Header = design('header', HEADER_CLASS);
-
+/** dts2md break */
+/**
+ * Class for toolbars at the bottom of view
+ */
 export const TOOLBAR_CLASS = X.createClass({
     display: 'block',
     position: 'fixed',
@@ -37,9 +52,15 @@ export const TOOLBAR_CLASS = X.createClass({
     backdropFilter: 'blur(2px)',
     zIndex: '9',
 });
-
+/** dts2md break */
+/**
+ * Component factory of toolbars
+ */
 export const Toolbar = design('div', TOOLBAR_CLASS);
-
+/** dts2md break */
+/**
+ * Class for mask layers
+ */
 export const MASK_CLASS = X.createClass({
     display: 'block',
     position: 'fixed',
@@ -52,9 +73,15 @@ export const MASK_CLASS = X.createClass({
     overflow: 'auto',
     zIndex: '99',
 });
-
+/** dts2md break */
+/**
+ * Component factory of mask layers
+ */
 export const Mask = design('div', MASK_CLASS);
-
+/** dts2md break */
+/**
+ * Class for dialog windows
+ */
 export const DIALOG_WINDOW_CLASS = X.createClass({
     display: 'block',
     position: 'fixed',
@@ -69,5 +96,8 @@ export const DIALOG_WINDOW_CLASS = X.createClass({
     boxShadow: '0 5px 5px #666',
     transform: 'translateX(-50%)',
 });
-
+/** dts2md break */
+/**
+ * Component factory of dialog windows
+ */
 export const DialogWindow = design('div', DIALOG_WINDOW_CLASS);

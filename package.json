@@ -11,7 +11,7 @@
     "prebuild": "tsc",
     "build": "rollup -c",
     "postbuild": "terser dist/super-d.js --config-file terser.json --module -o dist/super-d.min.js && terser dist/super-d.umd.js --config-file terser.json -o dist/super-d.umd.min.js && node stat",
-    "docs": "dts2md ** !index.d.ts -i ./types -o ./docs -l -I Home.md"
+    "docs": "dts2md '**' '!index.d.ts' -i ./types -o ./docs -l -I Home.md"
   },
   "repository": "huang2002/super-d",
   "keywords": [
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@babel/preset-env": "^7.8.0",
-    "dts2md": "^0.4.0",
+    "dts2md": "^0.4.2",
     "rollup": "^1.32.0",
     "rollup-plugin-babel": "^4.3.0",
     "super-x": "^0.15.0",

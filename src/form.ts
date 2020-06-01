@@ -1,5 +1,8 @@
 import { design } from './design';
 
+/**
+ * Class for buttons
+ */
 export const BUTTON_CLASS = X.createClass({
     display: 'inline-block',
     margin: '0 .5em',
@@ -29,9 +32,15 @@ export const BUTTON_CLASS = X.createClass({
         cursor: 'not-allowed',
     },
 });
-
+/** dts2md break */
+/**
+ * Component factory of buttons
+ */
 export const Button = design('button', BUTTON_CLASS);
-
+/** dts2md break */
+/**
+ * Class for text inputs
+ */
 export const TEXT_INPUT_CLASS = X.createClass({
     display: 'inline-block',
     margin: '.1em .5em',
@@ -50,5 +59,8 @@ export const TEXT_INPUT_CLASS = X.createClass({
         cursor: 'not-allowed',
     },
 });
-
+/** dts2md break */
+/**
+ * Component factory of text inputs
+ */
 export const TextInput = design('input', TEXT_INPUT_CLASS);
