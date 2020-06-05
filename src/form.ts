@@ -12,7 +12,7 @@ export const BUTTON_CLASS = X.createClass({
     borderRadius: '3px',
     boxShadow: '0 2px 3px #CCC',
     outline: 'none',
-    transition: 'background-color .1s ease-out, box-shadow .1s ease-out',
+    transition: 'background-color .1s ease-out, color .1s ease-out, box-shadow .1s ease-out',
 }, {
     ':hover': {
         color: '#000',
@@ -49,7 +49,7 @@ export const TEXT_INPUT_CLASS = X.createClass({
     lineHeight: '1.8em',
     borderBottom: 'solid 1px currentColor',
     outline: 'none',
-    transition: 'background-color .1s ease-out, box-shadow .1s ease-out',
+    transition: 'background-color .1s ease-out, color .1s ease-out',
 }, {
     ':focus': {
         color: '#000',
@@ -64,3 +64,13 @@ export const TEXT_INPUT_CLASS = X.createClass({
  * Component factory of text inputs
  */
 export const TextInput = design('input', TEXT_INPUT_CLASS);
+/** dts2md break */
+export const CHECKBOX_CLASS = X.createClass({
+    display: 'inline-block',
+    margin: '.5em',
+    width: '1em',
+    height: '1em',
+    borderRadius: '3px',
+});
+/** dts2md break */
+export const Checkbox = design('input', CHECKBOX_CLASS, { type: 'checkbox' });

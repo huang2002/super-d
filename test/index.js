@@ -7,6 +7,11 @@ const { createElement: h } = X;
  */
 const $dialogVisibility = X.toReactive(false);
 
+const FORM_LABEL_CLASS = X.createClass({
+    display: 'inline-block',
+    width: '40%',
+});
+
 /**
  * @param {string} target
  * @param {string} text
@@ -14,11 +19,7 @@ const $dialogVisibility = X.toReactive(false);
 const FormLabel = (target, text) => (
     h('label', {
         for: target,
-        style: {
-            display: 'inline-block',
-            width: '40%',
-            textAlign: 'right',
-        },
+        class: FORM_LABEL_CLASS,
     },
         text
     )
@@ -141,7 +142,7 @@ document.body.appendChild(
                                 'admin'
                             ),
                             h('option', {
-                                defaultSelected: '',
+                                selected: '',
                                 value: 'normal',
                             },
                                 'normal'
@@ -149,6 +150,12 @@ document.body.appendChild(
                         ),
                     ),
                     D.Section(null,
+                        D.Checkbox({
+                            id: 'save_cred`',
+                            name: 'save_cred`',
+                            value: 'save_cred`',
+                        }),
+                        FormLabel('save_cred', 'Save Cred.'),
                     ),
                     D.Section(null,
                         h('input', {
