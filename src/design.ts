@@ -8,8 +8,8 @@
  * need to include the default one to make styles work.)
  */
 export type DesignComponent = (props?: object | null, ...children: unknown[]) => any;
-/** dts2md */
-/** 
+/** dts2md break */
+/**
  * Design a type of components
  * @param tag The element tag
  * @param className Default class name(s)
