@@ -112,6 +112,7 @@ document.body.appendChild(
                         FormLabel('usr', 'User Name:'),
                         D.TextInput({
                             required: '',
+                            id: 'usr',
                             name: 'usr',
                         }),
                     ),
@@ -120,6 +121,7 @@ document.body.appendChild(
                         D.TextInput({
                             type: 'password',
                             required: '',
+                            id: 'pwd',
                             name: 'pwd',
                         }),
                     ),
@@ -127,6 +129,7 @@ document.body.appendChild(
                         FormLabel('usr_type', 'User Type:'),
                         h('select', {
                             class: D.TEXT_INPUT_CLASS,
+                            id: 'usr_type',
                             name: 'usr_type',
                             style: {
                                 textAlign: 'left',
@@ -144,6 +147,8 @@ document.body.appendChild(
                                 'normal'
                             ),
                         ),
+                    ),
+                    D.Section(null,
                     ),
                     D.Section(null,
                         h('input', {
