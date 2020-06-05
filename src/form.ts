@@ -65,6 +65,9 @@ export const TEXT_INPUT_CLASS = X.createClass({
  */
 export const TextInput = design('input', TEXT_INPUT_CLASS);
 /** dts2md break */
+/**
+ * Class for checkbox inputs
+ */
 export const CHECKBOX_CLASS = X.createClass({
     display: 'inline-block',
     margin: '.5em',
@@ -73,4 +76,7 @@ export const CHECKBOX_CLASS = X.createClass({
     borderRadius: '3px',
 });
 /** dts2md break */
+/**
+ * Component factory of checkbox inputs
+ */
 export const Checkbox = design('input', CHECKBOX_CLASS, { type: 'checkbox' });
