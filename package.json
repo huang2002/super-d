@@ -1,6 +1,6 @@
 {
   "name": "super-d",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple UI design based on `super-x`.",
   "module": "./dist/super-d.min.js",
   "main": "./dist/super-d.umd.min.js",
