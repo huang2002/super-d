@@ -8,7 +8,7 @@ X.insertStyle('*', {
     lineHeight: '2em',
     background: 'none',
     border: 'none',
-    sizingBox: 'border-box',
+    boxSizing: 'border-box',
 });
 
 X.insertStyle('body', {
