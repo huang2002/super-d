@@ -44,12 +44,12 @@ document.body.appendChild(
     h('div', {
         id: 'app',
         style: {
-            padding: '5em 2em',
+            padding: '4.5em 2em',
         },
     },
         /* header */
         D.Header({ id: 'header' },
-            D.PrimaryText({
+            D.Highlight({
                 style: {
                     fontWeight: 'bold',
                 },
@@ -60,7 +60,7 @@ document.body.appendChild(
                 style: {
                     position: 'absolute',
                     top: '1.1em',
-                    right: '3em',
+                    right: '.5em',
                     fontSize: '.8em',
                 },
                 listeners: {
@@ -116,8 +116,7 @@ document.body.appendChild(
                             id: 'usr',
                             name: 'usr',
                         }),
-                    ),
-                    D.Section(null,
+                        h('br'),
                         FormLabel('pwd', 'Password:'),
                         D.TextInput({
                             type: 'password',
@@ -125,8 +124,7 @@ document.body.appendChild(
                             id: 'pwd',
                             name: 'pwd',
                         }),
-                    ),
-                    D.Section(null,
+                        h('br'),
                         FormLabel('usr_type', 'User Type:'),
                         h('select', {
                             class: D.TEXT_INPUT_CLASS,
@@ -154,16 +152,24 @@ document.body.appendChild(
                             id: 'save_cred`',
                             name: 'save_cred`',
                             value: 'save_cred`',
+                            checked: '',
                         }),
                         FormLabel('save_cred', 'Save Cred.'),
                     ),
-                    D.Section(null,
+                    D.Section({
+                        style: {
+                            fontWeight: 'bold',
+                        },
+                    },
                         h('input', {
-                            class: D.BUTTON_CLASS,
+                            class: [D.BUTTON_CLASS, D.HIGHLIGHT_CLASS],
                             type: 'submit',
                             value: 'sign in',
                         }),
                         D.Button({
+                            style: {
+                                color: '#666',
+                            },
                             listeners: {
                                 /**
                                  * @param {Event} event
@@ -177,6 +183,11 @@ document.body.appendChild(
                             'cancel'
                         ),
                     ),
+                    D.Link({
+                        href: 'javascript:alert(":(");',
+                    },
+                        'Sign up'
+                    )
                 ),
             ),
         ),

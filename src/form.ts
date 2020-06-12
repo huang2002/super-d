@@ -9,26 +9,31 @@ export const BUTTON_CLASS = X.createClass({
     padding: '0 1em',
     backgroundColor: '#FFF',
     border: 'solid 1px currentColor',
-    borderRadius: '3px',
-    boxShadow: '0 2px 3px #CCC',
+    borderRadius: '4px',
+    boxShadow: 'none',
     outline: 'none',
-    transition: 'background-color .1s ease-out, color .1s ease-out, box-shadow .1s ease-out',
+    transform: 'none',
+    transition: 'background-color .1s ease-out, box-shadow .1s ease-out, transform .1s ease-out',
+    cursor: 'pointer',
 }, {
     ':hover': {
-        color: '#000',
-        boxShadow: '0 2px 2px #999',
+        boxShadow: '0 1px 0 currentColor',
+        transform: 'translateY(-1px)',
     },
     ':focus': {
-        color: '#111',
-        boxShadow: '0 2px 2px #AAA',
+        boxShadow: '0 1px 0 currentColor',
+        transform: 'translateY(-1px)',
     },
     ':active': {
-        backgroundColor: '#F5F5F5',
+        boxShadow: 'none',
+        transform: 'none',
+        backgroundColor: '#F9F9F9',
     },
     ':disabled': {
         color: '#444',
         backgroundColor: '#EEE',
         boxShadow: 'none',
+        transform: 'none',
         cursor: 'not-allowed',
     },
 });
@@ -50,6 +55,7 @@ export const TEXT_INPUT_CLASS = X.createClass({
     borderBottom: 'solid 1px currentColor',
     outline: 'none',
     transition: 'background-color .1s ease-out, color .1s ease-out',
+    cursor: 'text',
 }, {
     ':focus': {
         color: '#000',

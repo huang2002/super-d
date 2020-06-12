@@ -5,7 +5,7 @@ import { design } from './design';
  */
 export const SECTION_CLASS = X.createClass({
     display: 'block',
-    padding: '.5em 0',
+    padding: '.3em 0',
 });
 /** dts2md break */
 /**
@@ -25,8 +25,8 @@ export const HEADER_CLASS = X.createClass({
     padding: '.6em 1em',
     whiteSpace: 'nowrap',
     backgroundColor: 'rgba(255,255,255,.9)',
-    borderBottom: 'solid 1px #111',
-    boxShadow: '0 2px 5px #888',
+    borderBottom: 'solid 1px currentColor',
+    boxShadow: '0 2px 3px rgba(0,0,0,.3)',
     backdropFilter: 'blur(2px)',
     zIndex: '9',
 });
@@ -48,7 +48,7 @@ export const TOOLBAR_CLASS = X.createClass({
     padding: '.6em 1em',
     whiteSpace: 'nowrap',
     backgroundColor: 'rgba(255,255,255,.9)',
-    borderTop: 'solid 1px #222',
+    borderTop: 'solid 1px currentColor',
     backdropFilter: 'blur(2px)',
     zIndex: '9',
 });
@@ -87,13 +87,13 @@ export const DIALOG_WINDOW_CLASS = X.createClass({
     position: 'fixed',
     top: '2em',
     left: '0',
-    width: '16em',
+    width: '18em',
     marginLeft: '50%',
     padding: '1em',
     backgroundColor: 'rgba(255,255,255,.9)',
-    border: 'solid 1px #111',
+    border: 'solid 1px currentColor',
     borderRadius: '5px',
-    boxShadow: '0 5px 5px #666',
+    boxShadow: '0 3px 3px currentColor',
     transform: 'translateX(-50%)',
 });
 /** dts2md break */
