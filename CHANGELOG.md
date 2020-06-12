@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0
+
+- Adjust styles
+- Add `Highlight` & `Link`
+
 ## 0.1.2
 
 - Fix distribution files
