@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+- Modify initial styles
+
 ## 0.2.0
 
 - Adjust styles
