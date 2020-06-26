@@ -7,6 +7,7 @@ X.insertStyle('*', {
     color: 'inherit',
     fontSize: 'inherit',
     fontWeight: 'inherit',
+    textAlign: 'inherit',
     textDecoration: 'none',
     lineHeight: '2em',
     background: 'none',
