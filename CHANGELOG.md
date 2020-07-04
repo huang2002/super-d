@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- Update deps
+
 ## 0.3.0
 
 - Modify initial styles
