@@ -17,16 +17,13 @@ export const BUTTON_CLASS = X.createClass({
     cursor: 'pointer',
 }, {
     ':hover': {
-        boxShadow: '0 1px 0 currentColor',
-        transform: 'translateY(-1px)',
+        boxShadow: '0 0 5px rgba(0,0,0,.3)',
     },
     ':focus': {
-        boxShadow: '0 1px 0 currentColor',
-        transform: 'translateY(-1px)',
+        boxShadow: '0 0 5px rgba(0,0,0,.5)',
     },
     ':active': {
-        boxShadow: 'none',
-        transform: 'none',
+        transform: 'scale(.9)',
         backgroundColor: '#F9F9F9',
     },
     ':disabled': {
