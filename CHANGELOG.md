@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0
+
+- Update button style
+- Update deps
+
 ## 0.3.1
 
 - Update deps
