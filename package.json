@@ -36,6 +36,6 @@
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "super-x": "^0.15.0"
+    "super-x": "^1.0.0"
   }
 }
