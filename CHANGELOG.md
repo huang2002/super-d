@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1
+
+- Fix `super-x` version
+
 ## 0.4.0
 
 - Update button style
